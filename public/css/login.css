@@ -1,0 +1,90 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    background-color: #dbe9f8;
+    align-items: center;
+    padding: 0 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif   ;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.formulario{
+    background-color: #e8e8e8;
+    color: #212756;
+    width: 50%;
+    margin: 30px auto;
+    border-radius: 20px;
+}
+
+.info{
+    text-align: center;
+    padding: 40px;
+}
+
+p{
+    margin: 10px 0;
+}
+
+.campos{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="email"], input[type="password"]{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    border: solid 1px #212756;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 95%;
+}
+
+.input{
+    margin: 0px auto;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0px auto;
+    padding-bottom: 40px;
+}
+
+input[type="submit"]{
+    background-color: #212756;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0px auto;
+    margin-top: 20px;
+    width: 90%;
+}
+input[type="submit"]:hover{
+    background-color: #00bbff;
+}

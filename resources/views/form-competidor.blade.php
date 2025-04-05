@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ asset('css/form-competidor.css') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscribirse</title>
+    <title>Registrarse</title>
 </head>
 <body>
     <header>
@@ -55,7 +55,7 @@
                     <option value="9">Pando</option>
                 </select>
                 <div class="botones">
-                    <input type="reset" value="Cancelar">
+                    <input type="reset" value="Cancelar" onclick="location.href='{{ route('home') }}'">
                     <input type="submit" value="Siguiente">
                 </div>
             </div>

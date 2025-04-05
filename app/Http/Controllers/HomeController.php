@@ -15,4 +15,8 @@ class HomeController extends Controller
     {
         return view('form-competidor');
     }
+    function login()
+    {
+        return view('login');
+    }
 }
