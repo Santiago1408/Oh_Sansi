@@ -1,11 +1,10 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/registro', function () {
-    return view('form-competidor');
-});
+Route::get('/registro', [HomeController::class, 'registro']);

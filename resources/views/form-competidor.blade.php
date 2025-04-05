@@ -43,7 +43,17 @@
                 <p>Provincia: </p>
                 <input type="text" name="provincia" id="">
                 <p>Departamento: </p>
-                <input type="text" name="departamento" id="">
+                <select name="curso" id="">
+                    <option value="1">Cochabamba</option>
+                    <option value="2">Santa Cruz</option>
+                    <option value="3">La Paz</option>
+                    <option value="4">Chuquisaca</option>
+                    <option value="5">Tarija</option>
+                    <option value="6">Oruro</option>
+                    <option value="7">Potosi</option>
+                    <option value="8">Beni</option>
+                    <option value="9">Pando</option>
+                </select>
                 <div class="botones">
                     <input type="reset" value="Cancelar">
                     <input type="submit" value="Siguiente">

@@ -11,15 +11,26 @@ header h2{
 
 .formulario{
     background-color: #DBE9F8;
+    color: #212756;
+
 }
 
 .formulario h2{
     margin: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+}
+
+.formulario p{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 0;
+    font-size: 20px;
 }
 
 #titFormulario{
-    text-align: center;    
+    text-align: center;  
+    padding: 15px;  
 }
 
 .campos{
@@ -28,5 +39,46 @@ header h2{
 
 .seccion1, .seccion2{
     position: relative;
+    width: 50%;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+input[type="text"], input[type="email"], input[type="number"], input[type="date"], select{
+    width: 80%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    border: solid 1px #212756;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+select{
+    width: 83%;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 30px 17% 40px 40px;
+}
+
+input[type="submit"], input[type="reset"]{
+    background-color: #212756;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover{
+    background-color: #00bbff;
+    transition: 0.3s;
+}
+
+
 
