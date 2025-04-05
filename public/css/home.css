@@ -1,0 +1,106 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    background-color: #dbe9f8;
+    align-items: center;
+    padding: 0 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif   ;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-weight: 400;
+    padding: 0 40px;
+    font-size: 18px;
+}
+
+nav a:hover{
+    color: #00b
+    bff;
+}
+
+#inscripcion{
+    background-color: #212756;
+    color: white;
+    padding: 15px 35px;
+    margin-left: 30px;
+}
+
+#inscripcion:hover{
+    background-color: #00bbff;
+    color: white;
+}
+
+.bienvenida{
+    display: flex;
+    height: 600px;
+    align-items: center;
+}
+
+.info{
+    width: 60%;
+    align-items: center;
+}
+
+.mascota{
+    width: 40%;
+}
+
+.mascota img{
+    width: 90%;
+    height: 90%;
+}
+
+.bienvenida h2{
+    font-size: 60px;
+    text-align: center;
+    margin: 120px 30px 50px 30px;
+    color: #212756;
+}
+
+.bienvenida h3{
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 50px;
+    color: #212756;
+}
+
+.info p{
+    text-align: center;
+}
+
+#insc{
+    background-color: #212756;
+    border: none;
+    display: block;
+    margin: 60px auto;
+    color: white;
+    padding: 15px 35px;
+    font-size: 18px;
+}
+
+#insc:hover{
+    background-color: #00bbff;
+    color: white;
+}
