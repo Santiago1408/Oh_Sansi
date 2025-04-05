@@ -1,0 +1,32 @@
+header{
+    background-color: #00ABE4;
+}
+
+header h2{
+    margin: 0;
+    color: white;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.formulario{
+    background-color: #DBE9F8;
+}
+
+.formulario h2{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#titFormulario{
+    text-align: center;    
+}
+
+.campos{
+    display: flex;
+}
+
+.seccion1, .seccion2{
+    position: relative;
+}
+
