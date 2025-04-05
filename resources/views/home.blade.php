@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="img/Marca_Vertical_Universidad_Mayor_de_San_Simón_Cochabamba_Bolivia.png" alt="">
+            <img src="{{asset('images/logo-sansi.png')}}" alt="">
             <h1 class="oh-sansi">Oh! Sansi</h1>
         </div>
         <nav>
@@ -32,7 +32,7 @@
                 <input type="button" id="insc" value="Inscribirse">
             </div>
             <div class="mascota">
-                <img src="img/robot-sansi.png" alt="" srcset="">
+                <img src="{{asset('images/robot-sansi.png')}}" alt="">
             </div>
         </div>
     </main>
