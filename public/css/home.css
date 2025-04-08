@@ -103,4 +103,5 @@ nav a:hover{
 #insc:hover{
     background-color: #00bbff;
     color: white;
+    transition: 0.3s;
 }
