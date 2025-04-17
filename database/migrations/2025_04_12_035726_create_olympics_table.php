@@ -17,6 +17,8 @@ return new class extends Migration
             $table->string('name');
             $table->enum('state', ['registration', 'validation', 'competition', 'closed'])->default('registration');
             $table->text('description')->nullable();
+            $table->date('date_ini');
+            $table->date('date_fin');
 
             $table->timestamps();
         });

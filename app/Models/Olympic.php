@@ -18,6 +18,7 @@ class Olympic extends Model
         'name',
         'state',
         'description',
+        'date_fin',
     ];
 
     public function inscriptions()
