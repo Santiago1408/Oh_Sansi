@@ -23,6 +23,7 @@ class InscriptionSeeder extends Seeder
                 Inscription::create([
                     'competitor_id' => $competitor->id,
                     'olympic_id' => $olympic->id,
+                    'payment_order_id' => null,
                     'status' => 'pending',
                     'observation' => null,
                 ]);

@@ -17,6 +17,6 @@ class PaymentOrder extends Model
 
     public function inscriptions()
     {
-        return $this->belongsToMany(Inscription::class, 'inscription_payment_order');
+        return $this->hasMany(Inscription::class);
     }
 }

@@ -14,7 +14,7 @@ class CompetitorSeeder extends Seeder
      */
     public function run(): void
     {
-        $schools = School::take(10)->get();
+        $schools = School::all(); // Obtener todos los colegios
 
         $competitors = [
             ['name' => 'Juan', 'last_name' => 'Pérez', 'email' => 'juan.perez@example.com', 'ci' => '123456789', 'birthday' => '2005-04-10', 'phone' => '78912345', 'grade' => '10'],
@@ -29,10 +29,12 @@ class CompetitorSeeder extends Seeder
             ['name' => 'Isabel', 'last_name' => 'Jiménez', 'email' => 'isabel.jimenez@example.com', 'ci' => '987321654', 'birthday' => '2007-08-14', 'phone' => '78912354', 'grade' => '7'],
         ];
 
-        if ($schools->count() >= count($competitors)) {
-            foreach ($competitors as $index => $competitor) {
+        if ($schools->count() > 0) {
+            foreach ($competitors as $competitor) {
+                $randomSchool = $schools->random(); 
+
                 Competitor::create([
-                    'school_id' => $schools[$index]->id,
+                    'school_id' => $randomSchool->id,
                     'user_id' => null,
                     'name' => $competitor['name'],
                     'last_name' => $competitor['last_name'],
@@ -44,7 +46,7 @@ class CompetitorSeeder extends Seeder
                 ]);
             }
         } else {
-            echo "No hay suficientes colegios para asignar a todos los competidores.\n";
+            echo "No hay colegios disponibles para asignar a los competidores.\n";
         }
     }
 }

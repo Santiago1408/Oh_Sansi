@@ -26,8 +26,8 @@ class Inscription extends Model
         return $this->belongsTo(Olympic::class);
     }
 
-    public function areaInscriptions()
+    public function paymentOrder()
     {
-        return $this->hasMany(AreaInscription::class);
+        return $this->belongsTo(PaymentOrder::class);
     }
 }

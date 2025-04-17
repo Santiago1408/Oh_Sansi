@@ -16,10 +16,11 @@ return new class extends Migration
 
             $table->foreignId('competitor_id')->constrained()->onDelete('cascade');
             $table->foreignId('olympic_id')->constrained()->onDelete('cascade');
+            $table->foreignId('payment_order_id')->nullable()->constrained()->onDelete('set null');
 
             $table->enum('status', ['pending', 'validated', 'rejected'])->default('pending');
             $table->text('observation')->nullable();
-            
+
             $table->timestamps();
         });
     }
