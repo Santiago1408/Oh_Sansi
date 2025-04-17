@@ -18,7 +18,7 @@ return new class extends Migration
             $table->decimal('total', 10, 2);
             $table->enum('status', ['pending', 'paid', 'cancelled'])
                 ->default('pending');
-            $table->string('file');
+            $table->string('file')->nullable();
 
             $table->timestamps();
         });

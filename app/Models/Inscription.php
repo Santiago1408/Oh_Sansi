@@ -30,4 +30,9 @@ class Inscription extends Model
     {
         return $this->belongsTo(PaymentOrder::class);
     }
+    
+    public function areaInscriptions()
+    {
+        return $this->hasMany(AreaInscription::class);
+    }
 }
