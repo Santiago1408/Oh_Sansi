@@ -75,7 +75,7 @@
                         <td>{{ $areaInscription->areaLevelGrade->level->name }}</td>
                         <td>{{ $areaInscription->areaLevelGrade->grade->name }}</td>
                         <td>{{ $areaInscription->areaLevelGrade->area->description }}</td>
-                        <td>${{ $areaInscription->areaLevelGrade->area->price }}</td>
+                        <td>Bs{{ $areaInscription->areaLevelGrade->area->price }}</td>
                     </tr>
                 @endforeach
             </tbody>
@@ -86,7 +86,7 @@
         <div class="section">
             <h2>Orden de Pago</h2>
             <p><span class="bold">Código:</span> {{ $paymentOrder->code }}</p>
-            <p><span class="bold">Monto Total:</span> ${{ $paymentOrder->total }}</p>
+            <p><span class="bold">Monto Total:</span> Bs{{ $paymentOrder->total }}</p>
             <p><span class="bold">Estado:</span> {{ ucfirst($paymentOrder->status) }}</p>
         </div>
     @endif

@@ -38,6 +38,6 @@ class InscriptionController extends Controller
 
         $pdf = Pdf::loadView('pdf.inscription', compact('inscription', 'paymentOrder'));
 
-        return $pdf->download('inscripcion_' . $inscription->id . '.pdf');
+        return $pdf->download($inscription->competitor->name. '_Inscripcion_' . $inscription->id . '.pdf');
     }
 }

@@ -29,7 +29,7 @@
                     <p><strong>Nivel:</strong> {{ $areaInscription->areaLevelGrade->level->name }}</p>
                     <p><strong>Grado:</strong> {{ $areaInscription->areaLevelGrade->grade->name }}</p>
                     <p><strong>Descripción:</strong> {{ $areaInscription->areaLevelGrade->area->description }}</p>
-                    <p><strong>Precio:</strong> ${{ $areaInscription->areaLevelGrade->area->price }}</p>
+                    <p><strong>Precio:</strong> Bs{{ $areaInscription->areaLevelGrade->area->price }}</p>
                 </li>
             @endforeach
         </ul>
@@ -39,7 +39,7 @@
         @if ($paymentOrder)
             <div class="bg-green-50 border border-green-200 p-4 rounded-lg space-y-2">
                 <p><strong>Código:</strong> {{ $paymentOrder->code }}</p>
-                <p><strong>Monto Total:</strong> ${{ $paymentOrder->total }}</p>
+                <p><strong>Monto Total:</strong> Bs{{ $paymentOrder->total }}</p>
                 <p><strong>Estado:</strong>
                     <span class="uppercase font-medium text-green-700">
                         {{ ucfirst($paymentOrder->status) }}
