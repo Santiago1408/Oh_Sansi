@@ -7,18 +7,7 @@
     <title>Oh! Sansi</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="{{asset('images/logo-sansi.png')}}" alt="">
-            <h1 class="oh-sansi">Oh! Sansi</h1>
-        </div>
-        <nav>
-            <a href="{{route('login')}}" class="nav-link">Administrador</a>
-            <a href="{{route('login')}}" class="nav-link">Cajero</a>
-            <a href="{{route('login')}}" class="nav-link">Tutor</a>
-            <a href="{{route('registro')}}" class="nav-link" id="inscripcion">Inscripción</a>
-        </nav>
-    </header>
+    @include('layouts.partials.menu-home')
     <main>
         <div class="bienvenida">
             <div class="info">

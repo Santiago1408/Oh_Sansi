@@ -7,10 +7,8 @@
     <title>Areas</title>
 </head>
 <body>
-    <header>
-        <h1>Areas registradas</h1>
-    </header>
-
+    @include('layouts.partials.menu-admin')
+    <h1>Areas registradas</h1>
   
 
     <div class="listado">

@@ -21,4 +21,9 @@ class HomeController extends Controller
     {
         return view('login');
     }
+
+    public function admin()
+    {
+        return view('admin-areas');
+    }
 }

@@ -8,12 +8,7 @@
     <title>Iniciar sesion</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="{{asset('images/logo-sansi.png')}}" alt="">
-            <h1 class="oh-sansi">Oh! Sansi</h1>
-        </div>
-    </header>
+    @include('layouts.partials.menu-home')
     <div class="formulario">
         <div class="info">
             <h1>Iniciar Sesion</h1>

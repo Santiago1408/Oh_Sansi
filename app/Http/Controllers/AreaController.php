@@ -11,7 +11,7 @@ class AreaController extends Controller
     {
         $areas = Area::all();
 
-        return view('registro-areas', compact('areas'));
+        return view('admin-areas', compact('areas'));
     }
 
     public function store(Request $request){
