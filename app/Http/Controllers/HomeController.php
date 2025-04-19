@@ -2,20 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Area;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    function index()
+    public function index()
     {
         return view('home');
     }
 
-    function registro()
+    public function registro()
     {
         return view('form-competidor');
     }
-    function login()
+    
+    public function login()
     {
         return view('login');
     }
