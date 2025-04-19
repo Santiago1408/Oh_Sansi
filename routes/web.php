@@ -16,3 +16,4 @@ Route::get('/login', [HomeController::class, 'login'])->name('login');
 Route::get('/areas', [AreaController::class, 'index'])->name('areas');
 
 Route::post('/areas', [AreaController::class, 'store'])->name('areas.store');
+Route::delete('/areas/{id}', [AreaController::class, 'destroy'])->name('areas.destroy');

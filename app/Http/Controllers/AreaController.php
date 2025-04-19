@@ -22,4 +22,12 @@ class AreaController extends Controller
 
         return redirect()->route('areas')->with('success', 'Area created successfully.');
     }
+
+    public function destroy(Request $request, $id)
+    {
+        $area = Area::findOrFail($id);
+        $area->delete();
+
+        return redirect()->route('areas')->with('success', 'Area deleted successfully.');
+    }
 }

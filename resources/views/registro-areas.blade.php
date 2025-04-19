@@ -17,7 +17,11 @@
         @foreach($areas as $area)
             <div class="item">
                 <p>{{ $area->nombre }} - {{ $area->costo }}</p>
-                <button class="eliminar">Eliminar</button>
+                <form action="{{ route('areas.destroy', $area->id) }}" method="POST">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="eliminar" data-id="{{ $area->id }}">Eliminar</button>
+                </form>
             </div>
         @endforeach
     </div>
